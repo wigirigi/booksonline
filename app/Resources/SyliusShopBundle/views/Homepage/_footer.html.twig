@@ -1,0 +1,24 @@
+<footer id="footer" class="ui inverted vertical footer segment">
+    <div class="ui container">
+        <div class="ui inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">{{ 'sylius.ui.your_store'|trans }}</h4>
+                <div class="ui inverted link list">
+                    <a href="{{ path('booksonline_about') }}" class="item">{{ 'sylius.ui.about'|trans }}</a>
+                    <a href="{{ path('booksonline_terms') }}" class="item">{{ 'sylius.ui.terms_and_conditions'|trans }}</a>
+                    <a href="{{ path('booksonline_privacy') }}" class="item">{{ 'sylius.ui.privacy_policy'|trans }}</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">{{ 'sylius.ui.customer_care'|trans  }}</h4>
+                <div class="ui inverted link list">
+                    <a href="{{ path('booksonline_contact') }}" class="item">{{ 'sylius.ui.contact_us'|trans  }}</a>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <h4 class="ui inverted header">&copy; {{ 'sylius.ui.your_store'|trans }}</h4>
+                <p>{{ 'sylius.ui.powered_by'|trans }} <a href="https://www.facebook.com/ugoalak">Wiznet</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>

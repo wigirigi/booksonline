@@ -1,0 +1,11 @@
+services:
+  app.admin.menu_builder_listener:
+      class: AppBundle\EventListener\MenuBuilderListener
+      tags:
+          - { name: kernel.event_listener, event: sylius.menu_builder.frontend.currency, method: addFrontendMenuItems }
+
+
+  app.homepage_controller:
+      class:  AppBundle\Controller\HomepageController
+      arguments:
+          - "@templating"
